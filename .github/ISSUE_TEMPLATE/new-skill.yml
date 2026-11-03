@@ -1,0 +1,38 @@
+name: New skill idea
+description: Suggest a skill you'd like to see (or build)
+labels: ["new skill"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Skill name
+      placeholder: standup-notes
+    validations:
+      required: true
+  - type: textarea
+    id: job
+    attributes:
+      label: What job does it do?
+      description: The task, in one or two sentences, and what the output looks like.
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: What would you type to trigger it?
+      placeholder: |
+        "write my standup"
+        "what did I do yesterday"
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example of a good result
+      description: Paste a real (anonymised) example if you have one. This helps more than anything.
+  - type: checkboxes
+    id: build
+    attributes:
+      label: Building it
+      options:
+        - label: I'd like to build this skill myself

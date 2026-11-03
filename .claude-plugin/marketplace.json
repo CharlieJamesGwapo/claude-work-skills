@@ -1,0 +1,19 @@
+{
+  "name": "claude-work-skills",
+  "owner": {
+    "name": "Charlie James",
+    "url": "https://github.com/CharlieJamesGwapo"
+  },
+  "metadata": {
+    "description": "Practical everyday-work skills for Claude Code and other agents: status updates, commits, PRs, release notes, bug reports, meeting actions, voice-agent design and open-source launch checks.",
+    "version": "1.0.0",
+    "repository": "https://github.com/CharlieJamesGwapo/claude-work-skills"
+  },
+  "plugins": [
+    {
+      "name": "work-skills",
+      "description": "8 skills for the work around the code: daily updates for your boss, commit messages, PR descriptions, client-friendly release notes, reproducible bug reports, meeting notes to action items, AI phone agent design, and a pre-publish check before you open-source a repo.",
+      "source": "./"
+    }
+  ]
+}

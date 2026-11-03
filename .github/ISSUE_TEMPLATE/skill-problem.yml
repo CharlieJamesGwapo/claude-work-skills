@@ -1,0 +1,49 @@
+name: Skill problem
+description: A skill didn't trigger, triggered by mistake, or gave a bad result
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Which skill?
+      options:
+        - bug-report
+        - commit-message
+        - daily-update
+        - meeting-actions
+        - open-source-ready
+        - pr-description
+        - release-notes
+        - voice-agent-designer
+        - other / several
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong?
+      options:
+        - It didn't trigger when it should have
+        - It triggered when it shouldn't have
+        - The output was wrong or poor
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What you asked
+      description: Your exact prompt, with anything private removed.
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: What you got vs. what you expected
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and model
+      placeholder: Claude Code 2.x, Claude Opus / Codex / Cursor ...

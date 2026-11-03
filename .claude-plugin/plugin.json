@@ -1,0 +1,14 @@
+{
+  "name": "work-skills",
+  "description": "Practical everyday-work skills: status updates, commits, PRs, release notes, bug reports, meeting actions, voice-agent design and open-source launch checks.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Charlie James",
+    "url": "https://github.com/CharlieJamesGwapo"
+  },
+  "homepage": "https://github.com/CharlieJamesGwapo/claude-work-skills",
+  "repository": "https://github.com/CharlieJamesGwapo/claude-work-skills",
+  "license": "MIT",
+  "keywords": ["claude-skills", "agent-skills", "productivity", "git", "voice-agents"],
+  "skills": "./skills"
+}
